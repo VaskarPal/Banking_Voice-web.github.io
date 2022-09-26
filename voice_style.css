@@ -1,0 +1,79 @@
+body {
+    background:
+      radial-gradient(at 30% 40%, #00ffff80 10%, transparent 74%),
+      radial-gradient(at 70% 60%, #0080ff80 10%, transparent 74%);
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    min-height: 100vh;
+    --dropdown-handle-size: 0.35rem;  
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    margin: 0.5rem 0.5rem 8rem 0.5rem;
+  }
+  
+  label {
+    padding: 0 0 0.2rem 0;
+    display: block;
+  }
+  
+  .group {
+    margin: 0.75rem 0.75rem;
+  }
+  
+  input, select {
+    box-sizing: border-box;
+    font-size: 1.35rem;
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background: linear-gradient(#eee, #ffffff 20%);
+    min-width: 20rem;
+  }
+  
+  input:focus, select:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #fff;
+  }
+  
+  select {
+    /* reset */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(#eee, #ffffff 20%);
+    background-position:
+      calc(100% - var(--dropdown-handle-size) - 1rem) calc(50%),
+      calc(100% - 1rem) calc(50%),
+      center;
+    background-size:
+      var(--dropdown-handle-size) var(--dropdown-handle-size),
+      var(--dropdown-handle-size) var(--dropdown-handle-size),
+      100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .inputContainer {
+    position: relative;
+  }

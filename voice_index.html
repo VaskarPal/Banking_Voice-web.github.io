@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="style.css">
+    <script src="index33.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/@speechly/browser-ui/core/push-to-talk-button.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/@speechly/browser-ui/core/big-transcript.js"></script>
+      <script type="text/javascript" src="https://unpkg.com/@speechly/browser-ui/core/error-panel.js"></script>
+  </head>
+  <body>
+    <big-transcript placement="top" ></big-transcript>
+    <push-to-talk-button appid="ed4fed3e-3d81-4c3d-8f07-2ea14092a74d" placement="bottom" ></push-to-talk-button>
+    <error-panel placement="bottom" ></error-panel>
+    <main>
+      <section>
+        <div class="group">
+          <h2>Patient information</h2>
+        </div>
+
+        <div class="group">
+          <label>Date of Birth</label>
+          <div class="inputContainer">
+            <input id="date_of_birth" type="text" placeholder='May 4th 1977'/>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Card ID</label>
+          <div class="inputContainer">
+            <input id="card_id" type="text" placeholder=""/>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Phone</label>
+          <div class="inputContainer">
+            <input id="phone_number" type="text" placeholder=""/>
+          </div>
+        </div>
+
+        <div class="group">
+          <label>Zip</label>
+          <div class="inputContainer">
+            <input id="zip_code" type="text" placeholder=""/>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+
+  </body>
+</html>
